@@ -1,0 +1,107 @@
+2019-06-11 19:25:13,063 | INFO | Logged in
+2019-06-11 19:25:15,611 | INFO | In virtual football page
+2019-06-11 19:25:55,851 | INFO | | Betting 0.38lv, amount paid since last win: 0.38lv
+2019-06-11 19:26:07,082 | INFO |   | We lost, lose streak: 1
+2019-06-11 19:26:17,974 | INFO |   | Betting 0.96lv, amount paid since last win: 1.3399999999999999lv
+2019-06-11 19:26:21,765 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/95619a0f5a37fa8d9ad254ae5fe45436
+2019-06-11 19:26:21,765 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f27da0ff0f0>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/95619a0f5a37fa8d9ad254ae5fe45436
+2019-06-11 19:26:21,765 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f27da0ff048>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/95619a0f5a37fa8d9ad254ae5fe45436
+2019-06-11 19:33:01,297 | INFO | Logged in
+2019-06-11 19:33:04,462 | INFO | In virtual football page
+2019-06-11 19:33:20,198 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 39, in main
+    best_coef = crawler.find_best_coef(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 52, in find_best_coef
+    first_choice = WebDriverWait(driver, 180).until(expected_conditions.presence_of_element_located((By.XPATH, xpath)))
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-16-generic x86_64)
+
+
+2019-06-11 19:33:26,831 | INFO | Logged in
+2019-06-11 19:33:30,945 | INFO | In virtual football page
+2019-06-11 19:34:58,458 | INFO | | Betting 0.44lv, amount paid since last win: 0.44lv
+2019-06-11 19:35:09,376 | INFO |   | We lost, lose streak: 1
+2019-06-11 19:35:19,713 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 40, in main
+    crawler.bet(driver, best_coef)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 95, in bet
+    close_bet_frame(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 148, in close_bet_frame
+    WebDriverWait(driver, WINDOW_WAIT_TIME).until(expected_conditions.presence_of_element_located((By.CLASS_NAME, 'bs-Header_RemoveAllLink'))).click()
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-16-generic x86_64)
+
+
+2019-06-11 19:43:37,474 | INFO | Logged in
+2019-06-11 19:43:39,769 | INFO | In virtual football page
+2019-06-11 19:43:42,140 | INFO | | Betting 0.38lv, amount paid since last win: 0.38lv
+2019-06-11 19:44:30,944 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 40, in main
+    crawler.bet(driver, best_coef)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 116, in bet
+    coef = find_best_coef(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 65, in find_best_coef
+    second_choice.click()
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <div class="gl-Participant gl-Participant_General gl-Market_CN-3 ">...</div> is not clickable at point (585, 904). Other element would receive the click: <div class="g5-PopupManager_ClickMask "></div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-16-generic x86_64)
+
+
+2019-06-11 19:46:11,661 | INFO | Logged in
+2019-06-11 19:46:13,092 | INFO | In virtual football page
+2019-06-11 19:47:20,884 | INFO | | Betting 0.35lv, amount paid since last win: 0.35lv
+2019-06-11 19:47:31,583 | INFO |   | We lost, lose streak: 1
+2019-06-11 19:47:32,297 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 40, in main
+    crawler.bet(driver, best_coef)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 101, in bet
+    time.sleep(wait)
+ValueError: sleep length must be non-negative
+
+2019-06-11 19:56:17,835 | INFO | Logged in
+2019-06-11 19:56:20,092 | INFO | In virtual football page
+2019-06-11 19:59:20,522 | INFO | | Betting 0.35lv, amount paid since last win: 0.35lv
+2019-06-11 19:59:31,496 | INFO |   | We lost, lose streak: 1
+2019-06-11 20:02:20,597 | INFO |   | Betting 0.99lv, amount paid since last win: 1.3399999999999999lv
+2019-06-11 20:02:31,445 | INFO |     | We lost, lose streak: 2
+2019-06-11 20:02:51,214 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/6526aa2207024d44a202804ec07cc05d
+2019-06-11 20:02:51,215 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb4d6cddeb8>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/6526aa2207024d44a202804ec07cc05d
+2019-06-11 20:02:51,215 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb4d6cdde10>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/6526aa2207024d44a202804ec07cc05d

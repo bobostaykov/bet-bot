@@ -1,0 +1,8 @@
+2019-05-22 18:15:39,754 | INFO | Logged in
+2019-05-22 18:16:01,824 | INFO | In virtual football page
+2019-05-22 18:17:08,742 | INFO | | Betting 0.48lv, amount paid since last win: 0.48lv
+2019-05-22 18:17:09,618 | INFO |   | We lost, lose streak: 1
+2019-05-22 18:17:21,062 | ERROR | Message: chrome not reachable
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-15-generic x86_64)
+

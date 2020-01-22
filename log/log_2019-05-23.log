@@ -1,0 +1,45 @@
+2019-05-23 22:14:47,107 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 39, in <module>
+    crawler.get_to_virtual_sports_page(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/crawler.py", line 17, in get_to_virtual_sports_page
+    WebDriverWait(driver, 60).until(expected_conditions.presence_of_element_located((By.XPATH, '//*[contains(text(), "Виртуални спортове")]'))).click()
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2019-05-23 22:17:16,933 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/85c16ad4a4a0f7cd5541f5a89b06a79a
+2019-05-23 22:17:16,934 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf44ad9d68>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/85c16ad4a4a0f7cd5541f5a89b06a79a
+2019-05-23 22:17:16,935 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf44ad9cf8>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/85c16ad4a4a0f7cd5541f5a89b06a79a
+2019-05-23 22:17:46,437 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/b22a4cc740178e967ad099aaa8f1638f
+2019-05-23 22:17:46,439 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1edb5a2630>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/b22a4cc740178e967ad099aaa8f1638f
+2019-05-23 22:17:46,440 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1edb5a2940>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/b22a4cc740178e967ad099aaa8f1638f
+2019-05-23 22:20:03,474 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/6633fc25649ecc8774292c8fda64fe27
+2019-05-23 22:20:03,476 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3dc7306b70>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/6633fc25649ecc8774292c8fda64fe27
+2019-05-23 22:20:03,476 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3dc7306d68>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/6633fc25649ecc8774292c8fda64fe27
+2019-05-23 22:20:47,074 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 35, in <module>
+    crawler.get_to_virtual_sports_page(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/crawler.py", line 16, in get_to_virtual_sports_page
+    log_in(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/crawler.py", line 26, in log_in
+    login = WebDriverWait(driver, WINDOW_WAIT_TIME).until(expected_conditions.presence_of_element_located((By.CLASS_NAME, 'hm-Login')))
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-15-generic x86_64)
+
+

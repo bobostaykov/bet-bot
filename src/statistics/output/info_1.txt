@@ -1,0 +1,16 @@
+Matches total: 3361
+Matches     1: 1571
+Matches     X: 907
+Matches     2: 883
+
+Max streak  1: 13
+Max streak  X: 7
+Max streak  2: 7
+
+Min     coef for X1: 1.03
+Max     coef for X1: 1.5
+Average coef for X1: 1.28
+
+Min     coef for X2: 1.44
+Max     coef for X2: 3.25
+Average coef for X2: 1.84

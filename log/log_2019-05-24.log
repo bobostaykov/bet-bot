@@ -1,0 +1,201 @@
+2019-05-24 21:34:08,290 | INFO | Logged in
+2019-05-24 21:34:31,307 | INFO | In virtual football page
+2019-05-24 21:34:48,223 | INFO | | Betting 0.25lv, amount paid since last win: 0.25lv
+2019-05-24 21:34:49,942 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 40, in main
+    crawler.bet(driver, best_coef)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 107, in bet
+    coef = find_best_coef(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 64, in find_best_coef
+    second_choice.click()
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <div class="gl-Participant gl-Participant_General gl-Market_CN-3 ">...</div> is not clickable at point (745, 917). Other element would receive the click: <div class="g5-PopupManager_ClickMask "></div>
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-15-generic x86_64)
+
+
+2019-05-24 21:35:44,919 | INFO | Logged in
+2019-05-24 21:36:07,762 | INFO | In virtual football page
+2019-05-24 21:38:00,731 | INFO | | Betting 0.31lv, amount paid since last win: 0.31lv
+2019-05-24 21:38:12,396 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 40, in main
+    crawler.bet(driver, best_coef)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 108, in bet
+    coef = find_best_coef(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 64, in find_best_coef
+    second_choice.click()
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <div class="gl-Participant gl-Participant_General gl-Market_CN-3 ">...</div> is not clickable at point (745, 917). Other element would receive the click: <div class="g5-PopupManager_ClickMask "></div>
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-15-generic x86_64)
+
+
+2019-05-24 21:39:27,965 | INFO | Logged in
+2019-05-24 21:39:35,878 | INFO | In virtual football page
+2019-05-24 21:41:08,480 | INFO | | Betting 0.25lv, amount paid since last win: 0.25lv
+2019-05-24 21:41:20,515 | INFO |   | We lost, lose streak: 1
+2019-05-24 21:41:31,212 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 40, in main
+    crawler.bet(driver, best_coef)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 94, in bet
+    close_bet_frame(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 144, in close_bet_frame
+    WebDriverWait(driver, WINDOW_WAIT_TIME).until(expected_conditions.presence_of_element_located((By.CLASS_NAME, 'bs-Header_RemoveAllLink'))).click()
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-15-generic x86_64)
+
+
+2019-05-24 21:43:19,272 | INFO | Logged in
+2019-05-24 21:43:22,755 | INFO | In virtual football page
+2019-05-24 21:44:08,627 | INFO | | Betting 0.48lv, amount paid since last win: 0.48lv
+2019-05-24 21:44:20,482 | INFO |   | We lost, lose streak: 1
+2019-05-24 21:44:31,718 | INFO |   | Betting 1.38lv, amount paid since last win: 1.8599999999999999lv
+2019-05-24 21:44:43,164 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 40, in main
+    crawler.bet(driver, best_coef)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 107, in bet
+    coef = find_best_coef(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 64, in find_best_coef
+    second_choice.click()
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <div class="gl-Participant gl-Participant_General gl-Market_CN-3 ">...</div> is not clickable at point (903, 917). Other element would receive the click: <div class="g5-PopupManager_ClickMask "></div>
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-15-generic x86_64)
+
+
+2019-05-24 21:45:01,318 | INFO | Logged in
+2019-05-24 21:45:05,553 | INFO | In virtual football page
+2019-05-24 21:46:59,939 | INFO | | Betting 0.41lv, amount paid since last win: 0.41lv
+2019-05-24 21:47:11,683 | INFO |   | We lost, lose streak: 1
+2019-05-24 21:47:23,141 | INFO |   | Betting 1.09lv, amount paid since last win: 1.5lv
+2019-05-24 21:47:34,819 | INFO |     | We lost, lose streak: 2
+2019-05-24 21:47:46,019 | INFO |     | Betting 2.87lv, amount paid since last win: 4.37lv
+2019-05-24 21:47:57,727 | INFO |       | We lost, lose streak: 3
+2019-05-24 21:48:09,197 | INFO |       | Betting 7.58lv, amount paid since last win: 11.95lv
+2019-05-24 21:48:16,037 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/47105b79b4194ea01f8e68d77e1c1717
+2019-05-24 21:48:16,039 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fdde1fb5630>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/47105b79b4194ea01f8e68d77e1c1717
+2019-05-24 21:48:16,041 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fdde1fb5780>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/47105b79b4194ea01f8e68d77e1c1717
+2019-05-24 21:49:53,112 | INFO | Logged in
+2019-05-24 21:49:57,348 | INFO | In virtual football page
+2019-05-24 21:50:11,674 | INFO | | Betting 0.35lv, amount paid since last win: 0.35lv
+2019-05-24 21:50:23,036 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 40, in main
+    crawler.bet(driver, best_coef)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 105, in bet
+    new_balance = float(new_balance_div.text.split()[0].replace(',', '.'))
+ValueError: could not convert string to float: 'Баланс'
+
+2019-05-24 21:51:42,557 | INFO | Logged in
+2019-05-24 21:51:43,569 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 38, in main
+    crawler.get_to_virtual_sports_page(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 17, in get_to_virtual_sports_page
+    WebDriverWait(driver, 60).until(expected_conditions.presence_of_element_located((By.XPATH, '//*[contains(text(), "Виртуални спортове")]'))).click()
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-15-generic x86_64)
+
+
+2019-05-24 21:52:12,569 | INFO | Logged in
+2019-05-24 21:53:06,432 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 38, in main
+    crawler.get_to_virtual_sports_page(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 18, in get_to_virtual_sports_page
+    WebDriverWait(driver, 60).until(expected_conditions.presence_of_element_located((By.XPATH, '//*[contains(@class, "vr-VirtualsNavBarButton_Label") and contains(text(), "Футбол")]'))).click()
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-15-generic x86_64)
+
+
+2019-05-24 21:53:23,858 | INFO | Logged in
+2019-05-24 21:53:29,682 | INFO | In virtual football page
+2019-05-24 21:53:48,862 | INFO | | Betting 0.44lv, amount paid since last win: 0.44lv
+2019-05-24 21:54:00,768 | INFO |   | We lost, lose streak: 1
+2019-05-24 21:54:12,671 | INFO |   | Betting 1.22lv, amount paid since last win: 1.66lv
+2019-05-24 21:55:48,007 | INFO |     | We lost, lose streak: 2
+2019-05-24 21:55:59,972 | INFO |     | Betting 2.9lv, amount paid since last win: 4.56lv
+2019-05-24 21:56:11,853 | INFO |       | We lost, lose streak: 3
+2019-05-24 21:56:22,772 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 40, in main
+    crawler.bet(driver, best_coef)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 94, in bet
+    close_bet_frame(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 147, in close_bet_frame
+    WebDriverWait(driver, WINDOW_WAIT_TIME).until(expected_conditions.presence_of_element_located((By.CLASS_NAME, 'bs-Header_RemoveAllLink'))).click()
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.44.609551 (5d576e9a44fe4c5b6a07e568f1ebc753f1214634),platform=Linux 5.0.0-15-generic x86_64)
+
+

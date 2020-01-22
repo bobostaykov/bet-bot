@@ -1,0 +1,26 @@
+2019-10-02 13:27:02,041 | INFO | Logged in
+2019-10-02 13:27:04,395 | ERROR | Traceback (most recent call last):
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_main.py", line 38, in main
+    crawler.get_to_virtual_sports_page(driver)
+  File "/home/boris/PycharmProjects/Bet/src/bet/bet_crawler.py", line 18, in get_to_virtual_sports_page
+    WebDriverWait(driver, 60).until(expected_conditions.presence_of_element_located((By.XPATH, '//*[contains(text(), "Виртуални спортове")]'))).click()
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/boris/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <div class="wn-Classification ">...</div> is not clickable at point (89, 335). Other element would receive the click: <div class="pm-PushGraphicContainer_DarkWash "></div>
+  (Session info: chrome=77.0.3865.90)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 5.0.0-29-generic x86_64)
+
+
+2019-10-02 13:27:57,004 | INFO | Logged in
+2019-10-02 13:28:00,316 | INFO | In virtual football page
+2019-10-02 13:29:20,511 | INFO | | Betting 0.38lv, amount paid since last win: 0.38lv
+2019-10-02 13:29:32,003 | INFO |   | We lost, lose streak: 1
+2019-10-02 13:29:58,950 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))': /session/8a4c5f0691215697e06627ba01e927cb
+2019-10-02 13:29:58,951 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc75a398a20>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/8a4c5f0691215697e06627ba01e927cb
+2019-10-02 13:29:58,953 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc75a398be0>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/8a4c5f0691215697e06627ba01e927cb
